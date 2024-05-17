@@ -1,0 +1,17 @@
+.testimonial {
+    background-color: $verde;
+    font-size: 2.4rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    color: $blanco;
+
+    blockquote{
+        position: relative;
+    }
+
+    p {
+        text-align: right;
+        color: $blanco;
+        font-weight: bold;
+    }
+}

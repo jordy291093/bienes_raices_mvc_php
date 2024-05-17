@@ -1,0 +1,4 @@
+Libreria para Email - phpmailer/phpmailer {
+
+    composer require phpmailer/phpmailer
+}

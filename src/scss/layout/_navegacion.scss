@@ -1,0 +1,85 @@
+.derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+        align-items: flex-end;
+    }
+
+    .darkMode {
+        font-size: 3rem;
+        margin: 1rem 0 0 3.5rem;
+        color: $focoOn;
+        text-align: center;
+        cursor: pointer;
+        
+        @include tablet {
+            margin: .5rem 0 0 3rem;
+        }
+    }
+}
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.navegacion {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility .3s ease-in-out, opacity .5s linear, height .5s linear;
+
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        opacity: 1;
+        visibility: visible;
+    }
+    a {
+        color: $blanco;
+        text-decoration: none;
+        font-size: 2.2rem;
+        margin: .5rem 0;
+        display: block;
+        text-align: center;
+        &:hover {
+            color: $verde;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        @include tablet {
+            margin-right: 2rem;
+            font-size: 1.8rem;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+/** Menu **/
+.mobile-menu {
+    @include tablet {
+        display: none;
+    }
+    cursor: pointer;
+    margin-top: 1rem;
+    color: $blanco;
+    font-size: 3rem;
+}
+
+.mostrar {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}

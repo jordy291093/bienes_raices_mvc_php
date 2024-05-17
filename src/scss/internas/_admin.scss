@@ -1,0 +1,62 @@
+.alerta {
+    padding: 1rem;
+    font-weight: $bold;
+    margin: 1rem 0;
+    text-align: center;
+    border-radius: 1rem;
+}
+.error {
+    border: solid 1px $rojo;
+    background-color: $rojo;
+    color: $blanco;
+}
+.exito {
+    border: solid 1px $verde;
+    background-color: $verde;
+    color: $blanco;
+}
+.boton-back {
+    margin-top: 0;
+}
+
+table.propiedades {
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+
+    thead {
+        background-color: $verde;
+
+        th {
+            color: $blanco;
+            padding: 2rem;
+        }
+    }
+    tbody {
+        .info-consulta:nth-child(odd) {
+            background-color: $gris;
+        }
+        .info-consulta:nth-child(even) {
+            background-color: $blanco;
+        }
+        .info-consulta {
+            td {
+                padding: 1rem;
+                text-align: center;
+            }
+        }
+    }
+    .boton-rojo-block,
+    .boton-azul-block {
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+    }
+    .imagen-tabla {
+        width: 15rem;
+        margin: 1rem auto;
+    }
+}
+.imagen-small {
+    width: 30rem;
+    margin: auto;
+}
