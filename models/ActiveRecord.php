@@ -11,6 +11,9 @@ class ActiveRecord {
     // Validaciones
     protected static $errores = [];
 
+    public $id;
+    public $imagen;
+
     // Definir la conexion a la Bd
     public static function setDB($database) {
         self::$db = $database;

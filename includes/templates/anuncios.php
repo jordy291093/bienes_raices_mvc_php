@@ -1,5 +1,5 @@
 <?php 
-    use App\Propiedad;
+    use Model\Propiedad;
 
     // debug($_SERVER); // SCRIPT_NAME saber en donde esta el url de cada pagina
 
